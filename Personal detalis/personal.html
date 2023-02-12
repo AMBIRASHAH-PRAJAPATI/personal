@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Survey page</title>
+    <link rel="stylesheet" href="personal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Cinzel&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center"><b>Personal Details</b></h1>
+            <p id="description" class="description text-center">Fill all the details correctly, to save your personal
+                details. </p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-sec">
+                <label id="name-lebel" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="input-thing" required>
+            </div>
+            <div class="form-sec">
+                <label id="name-lebel" for="Institution Name">Institution Name</label>
+                <input type="text" name="Institution Name" id="institute-name" placeholder="Enter your institute"
+                    class="input-thing" required>
+            </div>
+            <div class="form-sec">
+                <label id="email-lebel" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="input-thing" required>
+            </div>
+            <div class="form-sec">
+                <label id="number-lebel" for="number">Age
+                    <span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" placeholder="age" min="10" max="99" class="input-thing">
+            </div>
+            <div class="form-sec">
+                <p>What u doo?</p>
+                <select name="role" id="dropdown" class="input-thing" required>
+                    <option disabled selected value>select work type</option>
+                    <option value="Student">Student</option>
+                    <option value="Government Job">Government Job</option>
+                    <option value="Full Time developer">Full Time developer</option>
+                    <option value="Part Time">Part Time</option>
+                    <option value="Noting">Noting</option>
+                </select>
+            </div>
+            <div class="form-sec">
+                <p>Gender</p>
+                <label>
+                    <input type="radio" class="input-radio" name="gender" value="Male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="gender" value="female">
+                    Female
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="gender" value="Third Gender">
+                    Third Gender
+                </label>
+            </div>
+            <div class="form-sec">
+                <p>Study in</p>
+                <select name="clg" id="clg" class="input-thing" required>
+                    <option disabled selected value>select collage type</option>
+                    <option value="Central">Central(national level)</option>
+                    <option value="State government">State government</option>
+                    <option value="Privat collage">Private collage</option>
+                    <option value="Graduate">Graduate</option>
+                </select>
+            </div>
+            <div class="form-sec">
+                <p>
+                    Field in which u are interested
+                    <span class="clue">(U can check more then one)</span>
+                </p>
+                <label>
+                    <input type="checkbox" name="field" value="App development" class="input-checkbox">
+                    App development
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="Front-end development" class="input-checkbox">
+                    Front-end development
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="Back-end development" class="input-checkbox">
+                    Back-end development
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="Web degin" class="input-checkbox">
+                    Web degin
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="Video graphy" class="input-checkbox">
+                    Video graphy
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="photo & Video Editing" class="input-checkbox">
+                    Photo & Video Editing
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="Cloud computing" class="input-checkbox">
+                    Cloud computing
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="ML/AI" class="input-checkbox">
+                    ML/AI
+                </label>
+                <label>
+                    <input type="checkbox" name="field" value="Data Anlytics" class="input-checkbox">
+                    Data Anlytics
+                </label>
+            </div>
+            <div class="form-sec">
+                <p>Descride about yourself</p>
+                <textarea name="comment" id="comment" class="input-textarea"
+                    placeholder="Enter about yourself..."></textarea>
+            </div>
+            <div class="form-sec">
+                <button type="submit" id="submit" class="submit-btn"> Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
